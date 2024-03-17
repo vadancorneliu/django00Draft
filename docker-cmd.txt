@@ -1,0 +1,6 @@
+# create custom image from Dockerfile
+docker build --tag django00draft:1.0 .
+
+# create container
+docker run --name Django00Draft --publish 8000:8000 django00draft:1.0
+
