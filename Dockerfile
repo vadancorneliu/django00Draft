@@ -1,6 +1,9 @@
 # this image  contains the minimal Debian packages needed to run python 3.11
 FROM python:3.11-slim
 
+# ensure that any python output is send to the terminal, without being buffered
+ENV PYTHONUNBUFFERED=1
+
 LABEL maintainer="vadancorneliu@gmail.com"
 
 # set working directory 
